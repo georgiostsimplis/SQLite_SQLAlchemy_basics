@@ -1,0 +1,29 @@
+What is SQLAlchemy?
+
+Sometimes, writing SQL queries in Python code can seem a little out of place. That's why many Python developers use an 
+object-relational mapping tool, or an ORM, to work with databases in a more Pythonic way. ORMs allow you to work with Python 
+or your language of choice instead of SQL to query and manipulate data in your databases. Now, there isn't just one ORM you can
+ use in Python. Various libraries implement this functionality and overall concept. And SQLAlchemy is one of the most popular ones 
+ for relational databases. SQLAlchemy also works with varying web frameworks, including Flask, and databases such as SQLite, MySQL, 
+ and Postgres, which is why we're focusing on it in this course. Even if your Python script is just a data analysis tool that 
+ interacts with the database, you can still use SQLAlchemy. Now, SQLAlchemy is a large SQL toolkit, with lots of different 
+ components, including an ORM. And these components can be used individually or combined together. Although we won't be going 
+ through all of its components, the two largest sections are SQLAlchemy Core and the SQLAlchemy ORM. While both have different 
+ ways of interacting with your database, the biggest difference between these two is that SQLAlchemy Core has a schema-centric view,
+  which is focused around tables, keys, and SQL concepts. SQLAlchemy encapsulates the schema with business objects. 
+  This means encapsulation makes your database interactions feel more like Python code. With SQLAlchemy ORM, you abstract many 
+  of the underlying database concepts. With SQLAlchemy Core, you use the SQL Expression Language, which is a mild abstraction 
+  of the typical SQL language. This allows it to be a consistent language across many relational databases. 
+  The SQLAlchemy ORM is focused around the domain model of the application. It also leverages the unit of work pattern 
+  to maintain consistency between objects and the database. It provides a higher level of abstraction on top of the 
+  SQL Expression Language. This enables the user to abstract database concepts even more, allowing you to work with your 
+  database in an object-oriented way. Even if you're using the ORM, you're still welcome to use the SQL Expression Language as well,
+   since the ORM is built on top of Core. Now, if you're a master at SQL, you'll likely be able to write more performant queries with
+    SQL than with the abstracted ORM. On the flip side, if you're not familiar with SQL, the ORM can give you some pretty 
+    fast queries right out of the box. Using an ORM also shifts the database complexity into the application code rather 
+    than keeping it in its own system. With the abstraction, an ORM can prevent you from understanding what SQL and other
+     technologies are doing under the hood. But since it simplifies working with the data layer immensely, many developers choose
+      to use one. Now, with the introduction of SQLAlchemy 2.0, Core and the ORM are becoming more integrated, meaning SQLAlchemy 
+      as a whole will be more unified. Currently, there are a bunch of different ways to do the exact same thing in this library. 
+      But the creators want to make it more simplified. This effort is currently in progress with SQLAlchemy 2.0 and will be in
+       progress for some time. But the first version of SQLAlchemy 2.0 has been released, and we'll be using it in this course.
